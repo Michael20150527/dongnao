@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+    <bean id="user" class="cn.itcast.ioc.User" scope="prototype"></bean>
+    <!-- 
+     <bean id="bean2" class="cn.itcast.bean.Bean2Factory" factory-method="getBean2"></bean>
+     
+     <bean id="bean3Factory" class="cn.itcast.bean.Bean3Factory"></bean>
+     <bean id="bean3" factory-bean="bean3Factory" factory-method="getBean3"></bean>
+	 
+	 
+	 <bean id="demo" class="cn.itcast.property.PropertyDemo1">
+	 	<constructor-arg name="username" value="Michael"></constructor-arg>
+	 </bean>
+	 
+	 <bean id="book" class="cn.itcast.property.Book">
+	 	<property name="bookname" value="Java"></property>
+	 </bean>
+	 
+	 <bean id="userDao" class="cn.itcast.ioc.UserDao"></bean>
+	 <bean id="userService" class="cn.itcast.ioc.UserService">
+	 	<property name="dao" ref="userDao"></property>
+	 </bean>
+	 -->
+	 
+	 <!-- p名称空间注入 -->
+	 <bean id="person" class="cn.itcast.property.Person" p:pname="Lucy"></bean>
+</beans>
