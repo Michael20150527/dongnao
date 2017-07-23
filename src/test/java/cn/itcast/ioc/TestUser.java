@@ -8,7 +8,7 @@ import cn.itcast.bean.Bean2;
 import cn.itcast.bean.Bean3;
 
 public class TestUser {
-	
+	/**
 	@Test
 	public void testAdd(){
 		ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
@@ -33,5 +33,5 @@ public class TestUser {
 		System.out.println(bean3);
 		bean3.add();
 	}
-
+**/
 }

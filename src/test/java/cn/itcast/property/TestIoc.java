@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import cn.itcast.ioc.UserService;
 
 public class TestIoc {
-	
+	/**
 	@Test
 	public void testAdd(){
 		ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
@@ -35,5 +35,5 @@ public class TestIoc {
 		Person person = (Person) context.getBean("person");
 		person.test1();
 	}
-
+**/
 }
